@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -55,7 +56,8 @@
     </div>
 </section>
 
-<section id="about">
+<section id="about"
+    data-aos="fade-up">
     <h2>About Me</h2>
 
     <p>
@@ -63,29 +65,47 @@
     </p>
 </section>
 
-<section id="skills">
+<section id="skills"
+    data-aos="zoom-in">
     <h2>My Skills</h2>
 
     <div class="skills-container">
         <div class="skill-card">
             <h3>HTML</h3>
             <p>Creating semantic and accessible markup for modern web applications.</p>
+            <div class="progress">
+    <div class="progress-bar html">95%</div>
+</div>
         </div>
 
         <div class="skill-card">
             <h3>CSS</h3>
             <p>Designing responsive layouts and implementing modern styling techniques.</p>
+            <div class="progress">
+    <div class="progress-bar css">90%</div>
+</div>
         </div>
 
         <div class="skill-card">
             <h3>JavaScript</h3>
             <p>Building interactive and dynamic user experiences with modern JS features.</p>
+            <div class="progress">
+    <div class="progress-bar javascript">85%</div>
+</div>
         </div>
+        <div class="skill-card">
+    <h3>C++</h3>
+    <p>Object-Oriented Programming & Problem Solving</p>
+
+    <div class="progress">
+        <div class="progress-bar java">80%</div>
+    </div>
+</div>
     </div>
 </section>
 
-<section id="projects">
-
+<section id="projects"
+data-aos="fade-left">
     <h2>My Projects</h2>
 
     <div class="projects-container">
@@ -142,30 +162,30 @@
 
 </section>
 
-<section id="education">
-
+<section id="education"
+data-aos="fade-right">
     <h2>Education</h2>
 
-    <div class="education-card">
+    <div class="education-card" 
         <h3>B.Tech in Computer Science</h3>
         <p>Lamrin Tech Skill University</p>
         <p>2025 – Present</p>
     </div>
 
-    <div class="education-card">
+    <div class="education-card" 
         <h3>Class 12</h3>
         <p>Completed in 2025</p>
     </div>
 
-    <div class="education-card">
+    <div class="education-card" 
         <h3>Class 10</h3>
         <p>Completed in 2023</p>
     </div>
 
 </section>
 
-<section id="journey">
-
+<section id="journey"
+data-aos="fade-up">
     <h2>My Journey</h2>
 
     <div class="journey-container">
@@ -199,7 +219,8 @@
 
 </section>
 
-<section id="contact">
+<section id="contact"
+    data-aos="zoom-in-up">
     <h2>Contact Me</h2>
 
     <div class="contact-container">
@@ -238,7 +259,11 @@
     <p>Designed & Developed with ❤️ using HTML, CSS & JavaScript</p>
 </footer>
 
-<script src="script.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
-</body>
-</html>
+<script>
+AOS.init({
+    duration:1000,
+    once:true
+});
+</script>
